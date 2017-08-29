@@ -1,0 +1,11 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h3>{{ selectedPerson.first }} {{ selectedPerson.last }}</h3>
+        <ul class="list-group">
+            <li class="list-group-item">ID: {{ selectedPerson.id }}</li>
+            <li class="list-group-item">Department {{ selectedPerson.department }}</li>
+            <li class="list-group-item">Birthday {{ selectedPerson.birthday }}</li>
+        </ul>
+        <button class="btn btn-primary" (click)="onEditPerson()">Edit</button>        
+    </div>
+</div>

@@ -1,0 +1,13 @@
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h3>Directory</h3>
+        <div class="list-group">
+                <a href="#" class="list-group-item"
+                *ngFor="let person of personList"
+                (click)="onSelectPerson(person)"
+                [ngClass]="{'active': person === selectedPerson }"
+                >{{ person.first }} {{ person.last }}</a>
+        </div>
+    </div>
+</div>
