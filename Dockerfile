@@ -1,3 +1,3 @@
-FROM node:8
+FROM node:7
 
 EXPOSE 4200
